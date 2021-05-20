@@ -1,9 +1,9 @@
 Rode o comando yarn para instalar as dependencias
 aletere .env.development para .env
 
-depois, yarn start
+informe a url da api em .env
 
-informe a url da api
+depois, yarn start
 
 para ver aplicação funcional, acesse
 
