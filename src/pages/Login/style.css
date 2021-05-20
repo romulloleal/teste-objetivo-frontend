@@ -1,0 +1,108 @@
+.welcome {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100vh;
+	min-height: 400px;
+	height: calc(var(--vh, 1vh) * 100);
+}
+
+.welcome .presentation {
+  background-color: #005492;
+  width: 50%;
+  color: #fff;
+	transition: linear 300ms;
+	margin-left: 0;
+}
+
+.welcome .presentation .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+	height: 100%;
+}
+
+.welcome .presentation .content .description {
+  font-size: 1.2em;
+  font-weight: 300;
+  text-align: center;
+	color: rgba(999, 999, 999, 0.8)
+}
+
+.welcome .presentation .content .graduationCap {
+  background-image: url("../../assets/logo1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 150px;
+}
+
+.welcome .login {
+	position: relative;
+  display: flex;
+	flex-direction: column;
+  align-items: center;
+  justify-content: center;
+	width: 50%;
+	height: 100%;
+}
+
+.welcome .login .top {
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	top: 5px;
+	display: none;
+	transition: ease 5s;
+}
+
+.welcome .login .top .logo {
+	background-image: url('../../assets/logo2.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+.welcome .login .formLogin {
+	max-width: 400px;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+}
+
+.welcome .login .formLogin .welcomeMessage {
+	margin-bottom: 30px;
+}
+
+.welcome .login .formLogin .login-options {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.welcome .login .formLogin .login-options a {
+	color: #3E82FF;
+	text-decoration: none;
+	font-size: 0.8em;
+}
+
+.welcome .login .copyright {
+	position: absolute;
+	bottom: 5px;
+	font-size: 0.8em;
+}
+
+@media only screen and (max-width: 768px) {
+	.welcome .login .top {
+		display: table;
+	}
+  .welcome .presentation {
+		margin-left: -50%;
+  }
+
+	.welcome .login {
+    width: 100%;
+  }
+}

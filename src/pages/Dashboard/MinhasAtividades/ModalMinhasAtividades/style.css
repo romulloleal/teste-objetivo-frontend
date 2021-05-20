@@ -1,0 +1,10 @@
+.headerMinhasAtividades {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;	
+}
+
+.modalMinhasAtividades {
+	width: 95%;
+	margin: 0 auto;
+}

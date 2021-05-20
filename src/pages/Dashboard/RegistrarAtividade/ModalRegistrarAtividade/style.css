@@ -1,0 +1,24 @@
+.headerRegistrar {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;	
+}
+
+.formRegistrarAtividade {
+	width: 90%;
+	margin: 0 auto;
+}
+.formRegistrarAtividade select, .formRegistrarAtividade textarea{
+	width: 100%;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+.formRegistrarAtividade select {
+	padding: 5px;
+}
+
+.formRegistrarAtividade textarea {
+	padding: 10px;
+	resize: none;
+}
